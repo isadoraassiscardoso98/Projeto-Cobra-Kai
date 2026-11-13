@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobra Kai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="painel-jogo">
+
+            <h1>🐍 Cobra Kai</h1>
+
+            <input
+                type="text"
+                id="nomeJogador"
+                placeholder="Digite seu nome"
+            >
+
+            <br><br>
+
+            <button onclick="comecarJogo()">
+                ▶ Começar Jogo
+            </button>
+
+            <div id="pontuacao">
+                Pontuação: 0
+            </div>
+
+            <canvas id="game" width="400" height="400"></canvas>
+
+            <br>
+
+            <button onclick="reiniciarJogo()">
+                🔄 Reiniciar Jogo
+            </button>
+
+        </div>
+
+        <div class="placar">
+
+            <h2>🏆 Ranking</h2>
+
+            <div id="ranking">
+                Nenhum jogador ainda
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
